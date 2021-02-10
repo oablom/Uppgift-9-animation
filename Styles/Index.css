@@ -1,0 +1,192 @@
+/* Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset*/
+
+
+
+body {
+    background-color: bisque;
+    background-size: cover;
+    position: relative;
+    font-family: 'Happy Monkey', cursive;
+}
+
+/* <Header> */
+    .header {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
+
+        .animate__animated  {
+            font-size: 40px;
+            text-align: center;
+            width: 300px;
+            margin: 20px;
+            position: fixed;
+            
+        }
+/* </Header> */
+
+/* <Main> */
+    /* <roffesection> */
+    .roffesection {
+        width: 1265px;
+        height: 600px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        animation: roffesection duration timing-function delay iteration-count direction fill-mode;
+    }
+
+        .roffe {
+            background-color: black;
+            position: absolute;
+            animation: roffes 20s cubic-bezier(0.94, 0.41, 0.41, 0.95) 5s infinite alternate none;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            width: 200px;
+            height: 200px;
+            border-radius: 60%;
+        }
+
+        @keyframes roffes {
+            
+            0% {
+                transform: translateX(0px);
+            }
+            10% {
+                transform: translatey(500px);
+            }
+            20% {
+                transform: translatey(-200px);
+            }
+            30% {
+                transform: translatex(30px);
+            }
+            40% {
+                transform: translate(30px, 670px);
+            }
+            50% {
+                transform: translateX(-300px);
+            }
+            60% {
+                transform: translateY(300x);   
+            }
+            80% {
+                transform: translatex(-200px);   
+            }
+            90% {
+                transform: translate(-300, 200px);   
+            }
+            100% {
+                
+            }
+        }
+    /* </roffesection> */
+
+    .invitation {
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        
+    }
+
+        .invitationcard {
+            display: flex;
+            width: 200px;
+            height: 300px;
+            position: fixed;
+        }
+
+            .invitationcard img {
+                width: 100%;
+                border-radius: 4px;
+                animation: card 3s ease-in-out 2s forwards;
+            }
+            
+            .content {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                width: 200px;
+                height: 300px;
+                animation: card 3s ease-in-out 2s forwards;
+            }
+
+                @keyframes card {
+                
+                    20% {
+                        transform: translatey(-100px); color: black;
+                    }
+                    40% {
+                        transform: translateX(100px);
+                    }
+                    60% {
+                        transform: translateY(100px);   
+                    }
+                    80% {
+                        transform: translateX(-100px);
+                    }
+                }
+
+                .info {
+                    font-size: 10px;
+                }
+                .invisible {
+                    
+                    color: white;
+                }
+
+            .invisible:hover {
+                color: black;
+                cursor: default;
+                transition: 0.5s 2.5s ease-in-out; 
+            }
+/* </Main> */
+            
+
