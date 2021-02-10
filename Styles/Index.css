@@ -79,8 +79,9 @@ body {
         position: absolute;
         display: flex;
         justify-content: center;
-        animation: roffesection duration timing-function delay iteration-count direction fill-mode;
     }
+
+
 
         .roffe {
             background-color: black;
